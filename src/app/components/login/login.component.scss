@@ -1,0 +1,30 @@
+.body {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(201, 173, 223, 0.314);
+
+}
+
+img {
+  border-radius: 100%;
+}
+
+.login {
+  width: 50%;
+  max-width: 300px;
+}
+
+.ancho  {
+  width: 80%;
+}
+
+.button {
+  height: 50px;
+}
+
+.spinner {
+  margin: 0 auto;
+}

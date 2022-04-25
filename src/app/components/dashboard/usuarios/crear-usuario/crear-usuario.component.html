@@ -1,0 +1,65 @@
+<div class="container">
+  <mat-toolbar>
+    <span>Crear Post</span>
+
+  </mat-toolbar>
+  <mat-card style="margin-top: 10px;">
+    <form>
+
+      <mat-grid-list cols="4" rowHeight="70px">
+        <mat-grid-tile  [colspan]="1"
+        [rowspan]="1"
+        [style.background]="'lightblue'">
+        <mat-form-field class="ancho">
+          <mat-label aria-required="true">Title</mat-label>
+          <input matInput>
+        </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile  [colspan]="3"
+        [rowspan]="5"
+        [style.background]="'lightblue'">
+          <img src="./assets/img/usuario.png" width="300" height="300">
+        </mat-grid-tile>
+
+        <mat-grid-tile  [colspan]="1"
+        [rowspan]="1"
+        [style.background]="'lightblue'">
+        <mat-form-field class="ancho">
+          <mat-label aria-required="true">Body</mat-label>
+          <input matInput>
+        </mat-form-field>
+        </mat-grid-tile>
+
+        <mat-grid-tile  [colspan]="1"
+        [rowspan]="1"
+        [style.background]="'lightblue'">
+
+        </mat-grid-tile>
+
+        <mat-grid-tile  [colspan]="1"
+        [rowspan]="1"
+        [style.background]="'lightblue'">
+
+        </mat-grid-tile>
+        <mat-grid-tile  [colspan]="1"
+        [rowspan]="1"
+        [style.background]="'lightblue'">
+
+        </mat-grid-tile>
+
+      </mat-grid-list>
+
+      <br>
+      <br>
+      <mat-grid-list cols="4" rowHeight="100px">
+        <mat-grid-tile
+            *ngFor="let tile of tiles"
+            [colspan]="tile.cols"
+            [rowspan]="tile.rows"
+            [style.background]="tile.color">
+          {{tile.text}}
+        </mat-grid-tile>
+      </mat-grid-list>
+    </form>
+  </mat-card>
+</div>
